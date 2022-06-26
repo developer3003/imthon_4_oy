@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Admin Post</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header__user-name">John Doe</div>
+            <button class="header__logout" onclick="handleLogout()">Logout</button>
+        </header>
+
+        <main class="main">
+
+            <!-- Post Left -->
+            <section class="post-left">
+                <h2 class="post-left__title">Posts</h2>
+
+            </section>
+
+            <!-- Post Right -->
+            <section class="post-right">
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Madal -->
+    <div class="modal">
+        <div class="modal-box">
+            <h3 class="modal__title">EDIT POST</h3>
+            <input class="modal-input" type="text" placeholder="title">
+            <input class="modal-input" type="text" placeholder="body">
+            <div class="modal__wrap">
+                <button class="modal__btn-cancel" onclick="clickModalCancel()">Cancel</button>
+                <button class="modal__btn-save">Save Change</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/admin.js"></script>
+    <script src="./js/checkauth.js"></script>
+    <script src="./js/http-res.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+
+
+</body>
+
+</html>
